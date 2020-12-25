@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>User Signup</title>
+<link rel="icon" type="image/png" href="assets/images/icon.png">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="assets/css/Course_Form.css">
+</head>
+<body>
+
+<div class='sign-form'>
+  <h2>Course Form</h2>
+  <form action="course.php" method="post">
+  <input name="course" placeholder="Course_Name" type="text">
+  <input name="name" placeholder="Instructor_Name" type="text">
+  <input type="tel" name="phone" placeholder="Instructor_Phone_Number">
+  <input type="email" name="Email" placeholder="Instructor_Email">
+  <div> 
+     <select name="uses">
+            <optgroup><p> Choose type of Course</p>
+                   <option>Ayurveda</option>
+                   <option>Yoga</option>
+                   <option>Both</option>
+             </optgroup>
+     </select>
+  </div>
+  <input type="text" name="app" placeholder="Appliction">
+  
+  <input type="number" name="video" placeholder="Video_Count">
+  <div>
+  <input type="number" name="dur" placeholder="Video_Duration">
+      <select name="type">
+            <optgroup><p> Choose type of difficulty</p></optgroup>
+                   <option>Beginner</option>
+                   <option>Intermediate</option>
+                   <option>Advance</option>
+             
+     </select>
+   </div>
+     <div>
+     <textarea placeholder="Descpiption_of_Course" name="desc" rows="5" cols="56"></textarea></div>
+  <button class="btn" type="submit"> Next </button>
+  </form>
+</div>
+</body>
+</html>
